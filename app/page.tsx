@@ -1,102 +1,281 @@
+'use client';
+
 import Image from "next/image";
+import { Mail, Phone, MessageCircle, Linkedin, Facebook, Instagram, FileText } from "lucide-react";
+import { useState } from "react";
 
 export default function Home() {
-  return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+  const galleryImages = [
+    { src: "/images/1.webp", alt: "Moment 1" },
+    { src: "/images/coolef_event.webp", alt: "Coolef Event" },
+    { src: "/images/fb_img_1728407861209.webp", alt: "Professional Moment" },
+    { src: "/images/img_20220317_161253.webp", alt: "Event Moment" },
+    { src: "/images/img_20230411_100655.webp", alt: "Professional Setting" },
+    { src: "/images/noon_event.webp", alt: "Noon Event" },
+    { src: "/images/samiramies_event.webp", alt: "Samiramies Event" },
+    { src: "/images/samiramies_event2.webp", alt: "Samiramies Event 2" },
+  ];
+
+  return (
+    <div className="min-h-screen bg-white dark:bg-gradient-to-br dark:from-slate-950 dark:via-slate-900 dark:to-slate-950">
+      {/* Animated Background Orbs */}
+      <div className="fixed inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-500/10 dark:bg-blue-500/5 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-500/10 dark:bg-purple-500/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+      </div>
+      {/* Hero Section with Gradient Card */}
+      <section className="relative container mx-auto px-4 py-12 md:py-20">
+        <div className="max-w-5xl mx-auto">
+          <div className="relative bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600 p-[2px] rounded-3xl shadow-2xl">
+            <div className="bg-white dark:bg-slate-900 rounded-3xl p-8 md:p-12">
+              <div className="text-center">
+                {/* Profile Picture with Gradient Glow */}
+                <div className="mb-8 relative inline-block">
+                  <div className="absolute inset-0 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 rounded-full blur-lg opacity-75 animate-pulse"></div>
+                  <div className="relative w-44 h-44 mx-auto rounded-full overflow-hidden border-4 border-white dark:border-slate-900 shadow-2xl">
+                    <Image
+                      src="/images/pfp.jpg"
+                      alt="Profile Picture"
+                      fill
+                      className="object-cover"
+                      priority
+                    />
+                  </div>
+                </div>
+
+                {/* Name with Gradient Text */}
+                <h1 className="text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
+                  Ahmed Mostafa
+                </h1>
+                <div className="inline-block mb-8">
+                  <p className="text-xl md:text-2xl text-slate-700 dark:text-slate-300 font-medium px-6 py-3 bg-slate-100 dark:bg-slate-800 rounded-full">
+                    E-commerce Marketing Manager at <span className="font-bold text-blue-600 dark:text-blue-400">BEYMEN GROUP</span>
+                  </p>
+                </div>
+
+                {/* Contact Buttons Grid */}
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-3xl mx-auto">
+                  <a
+                    href="mailto:ahmed.elhussieny95@gmail.com"
+                    className="group relative overflow-hidden bg-gradient-to-br from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white rounded-xl p-4 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+                  >
+                    <div className="relative z-10 flex flex-col items-center gap-2">
+                      <div className="p-2 bg-white/20 rounded-lg group-hover:bg-white/30 transition-colors">
+                        <Mail size={20} className="group-hover:scale-110 transition-transform" strokeWidth={2.5} />
+                      </div>
+                      <span className="font-semibold text-sm">Email</span>
+                    </div>
+                    <div className="absolute inset-0 bg-white/0 group-hover:bg-white/10 transition-colors"></div>
+                  </a>
+                  <a
+                    href="tel:+201068418714"
+                    className="group relative overflow-hidden bg-gradient-to-br from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white rounded-xl p-4 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+                  >
+                    <div className="relative z-10 flex flex-col items-center gap-2">
+                      <div className="p-2 bg-white/20 rounded-lg group-hover:bg-white/30 transition-colors">
+                        <Phone size={20} className="group-hover:scale-110 transition-transform" strokeWidth={2.5} />
+                      </div>
+                      <span className="font-semibold text-sm">Phone</span>
+                    </div>
+                    <div className="absolute inset-0 bg-white/0 group-hover:bg-white/10 transition-colors"></div>
+                  </a>
+                  <a
+                    href="https://wa.me/201068418714"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group relative overflow-hidden bg-gradient-to-br from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white rounded-xl p-4 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+                  >
+                    <div className="relative z-10 flex flex-col items-center gap-2">
+                      <div className="p-2 bg-white/20 rounded-lg group-hover:bg-white/30 transition-colors">
+                        <MessageCircle size={20} className="group-hover:scale-110 transition-transform" strokeWidth={2.5} />
+                      </div>
+                      <span className="font-semibold text-sm">WhatsApp</span>
+                    </div>
+                    <div className="absolute inset-0 bg-white/0 group-hover:bg-white/10 transition-colors"></div>
+                  </a>
+                  <a
+                    href="wechat://Elhussieny95"
+                    className="group relative overflow-hidden bg-gradient-to-br from-teal-500 to-teal-600 hover:from-teal-600 hover:to-teal-700 text-white rounded-xl p-4 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+                  >
+                    <div className="relative z-10 flex flex-col items-center gap-2">
+                      <div className="p-2 bg-white/20 rounded-lg group-hover:bg-white/30 transition-colors">
+                        <MessageCircle size={20} className="group-hover:scale-110 transition-transform" strokeWidth={2.5} />
+                      </div>
+                      <span className="font-semibold text-sm">WeChat</span>
+                    </div>
+                    <div className="absolute inset-0 bg-white/0 group-hover:bg-white/10 transition-colors"></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+      </section>
+
+      {/* About Me Section with Unique Card */}
+      <section className="relative py-16 md:py-24">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="relative bg-gradient-to-br from-slate-100 to-slate-200 dark:from-slate-800 dark:to-slate-900 rounded-3xl p-8 md:p-12 shadow-xl border border-slate-200 dark:border-slate-700">
+              <div className="absolute top-0 left-0 w-32 h-32 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-full blur-3xl"></div>
+              <div className="absolute bottom-0 right-0 w-32 h-32 bg-gradient-to-br from-pink-500/20 to-purple-500/20 rounded-full blur-3xl"></div>
+              
+              <div className="relative z-10">
+                <h2 className="text-4xl md:text-5xl font-bold mb-8 text-center">
+                  <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
+                    About Me
+                  </span>
+                </h2>
+                <p className="text-lg md:text-xl text-slate-700 dark:text-slate-300 leading-relaxed text-center">
+                  A successful marketing leader with proven accomplishments in driving growth and increasing profits. Articulate and driven leader with high energy and engaging personality. Hardworking team builder motivational in maximizing personnel performance and surpassing business objectives.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Social Links with Modern Cards */}
+      <section className="relative py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">
+              <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
+                Connect With Me
+              </span>
+            </h2>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+              <a
+                href="https://www.linkedin.com/in/ahmed-mostafa-elhussieny/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative overflow-hidden bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 border border-slate-200 dark:border-slate-700"
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-blue-600/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                <div className="relative z-10 flex flex-col items-center gap-4">
+                  <div className="p-4 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl shadow-lg group-hover:scale-110 transition-transform">
+                    <Linkedin size={32} className="text-white" />
+                  </div>
+                  <span className="font-semibold text-slate-900 dark:text-white">LinkedIn</span>
+                </div>
+              </a>
+              <a
+                href="https://www.facebook.com/Ahmed.M.ElHussieny"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative overflow-hidden bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 border border-slate-200 dark:border-slate-700"
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-blue-700/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                <div className="relative z-10 flex flex-col items-center gap-4">
+                  <div className="p-4 bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl shadow-lg group-hover:scale-110 transition-transform">
+                    <Facebook size={32} className="text-white" />
+                  </div>
+                  <span className="font-semibold text-slate-900 dark:text-white">Facebook</span>
+                </div>
+              </a>
+              <a
+                href="https://instagram.com/ahmed.mostafa"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative overflow-hidden bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 border border-slate-200 dark:border-slate-700"
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-pink-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                <div className="relative z-10 flex flex-col items-center gap-4">
+                  <div className="p-4 bg-gradient-to-br from-pink-500 via-purple-500 to-pink-600 rounded-2xl shadow-lg group-hover:scale-110 transition-transform">
+                    <Instagram size={32} className="text-white" />
+                  </div>
+                  <span className="font-semibold text-slate-900 dark:text-white">Instagram</span>
+                </div>
+              </a>
+              <a
+                href="https://ahmed-elhussieny.github.io/Ahmed-Mostafa-CV/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative overflow-hidden bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 border border-slate-200 dark:border-slate-700"
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-slate-500/10 to-slate-600/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                <div className="relative z-10 flex flex-col items-center gap-4">
+                  <div className="p-4 bg-gradient-to-br from-slate-700 to-slate-800 rounded-2xl shadow-lg group-hover:scale-110 transition-transform">
+                    <FileText size={32} className="text-white" />
+                  </div>
+                  <span className="font-semibold text-slate-900 dark:text-white">Resume</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Gallery with Modern Layout */}
+      <section className="relative py-16 md:py-24">
+        <div className="container mx-auto px-4">
+          <div className="max-w-7xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">
+              <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
+                Some Moments
+              </span>
+            </h2>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+              {galleryImages.map((image, index) => (
+                <div
+                  key={index}
+                  className="group relative aspect-square rounded-2xl overflow-hidden cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-[1.02]"
+                  onClick={() => setSelectedImage(image.src)}
+                >
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="absolute inset-0 ring-2 ring-transparent group-hover:ring-white/50 dark:group-hover:ring-white/30 rounded-2xl transition-all duration-300"></div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Enhanced Image Modal */}
+      {selectedImage && (
+        <div
+          className="fixed inset-0 bg-black/95 backdrop-blur-sm z-50 flex items-center justify-center p-4 animate-in fade-in duration-200"
+          onClick={() => setSelectedImage(null)}
         >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+          <div className="relative max-w-6xl max-h-[90vh] w-full h-full">
+            <Image
+              src={selectedImage}
+              alt="Selected moment"
+              fill
+              className="object-contain"
+            />
+            <button
+              className="absolute top-4 right-4 text-white bg-gradient-to-br from-slate-800 to-slate-900 hover:from-slate-700 hover:to-slate-800 rounded-full p-3 transition-all duration-300 shadow-xl hover:scale-110"
+              onClick={() => setSelectedImage(null)}
+            >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      )}
+
+      {/* Modern Footer */}
+      <footer className="relative py-12 mt-16 border-t border-slate-200 dark:border-slate-800">
+        <div className="container mx-auto px-4">
+          <div className="text-center">
+            <div className="inline-block mb-4">
+              <div className="w-16 h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full"></div>
+            </div>
+            <p className="text-slate-600 dark:text-slate-400 font-medium">
+              &copy; 2025 Ahmed Mostafa. All rights reserved.
+            </p>
+          </div>
+        </div>
       </footer>
     </div>
   );
