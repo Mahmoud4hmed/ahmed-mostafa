@@ -147,7 +147,7 @@ export default function Home() {
               </span>
             </h2>
             <p className="text-center text-slate-600 dark:text-slate-400 mb-12 text-lg">
-              E-commerce Websites I've Created
+              E-commerce Websites I&rsquo;ve Created
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
