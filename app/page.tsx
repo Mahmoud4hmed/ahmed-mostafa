@@ -1,7 +1,7 @@
 'use client';
 
 import Image from "next/image";
-import { Mail, Phone, MessageCircle, Linkedin, Facebook, Instagram, FileText, ShoppingBag, Stethoscope, Beef, Smartphone, Pill, Store, ExternalLink } from "lucide-react";
+import { Mail, Phone, MessageCircle, Linkedin, Facebook, Instagram, FileText, ShoppingBag, Stethoscope, Beef, Smartphone, Pill, Shirt, SprayCan, ExternalLink } from "lucide-react";
 import { useState } from "react";
 
 export default function Home() {
@@ -165,7 +165,7 @@ export default function Home() {
                 <div className="absolute inset-0 bg-gradient-to-br from-slate-700/10 to-slate-900/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
                 <div className="relative z-10 flex flex-col items-center gap-4 text-center">
                   <div className="p-5 bg-gradient-to-br from-slate-700 to-slate-900 rounded-2xl shadow-lg group-hover:scale-110 transition-transform">
-                    <Store size={36} className="text-white" />
+                    <Shirt size={36} className="text-white" />
                   </div>
                   <div>
                     <h3 className="font-bold text-xl text-slate-900 dark:text-white mb-2">Beymen</h3>
@@ -211,7 +211,7 @@ export default function Home() {
                 <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-pink-500/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
                 <div className="relative z-10 flex flex-col items-center gap-4 text-center">
                   <div className="p-5 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl shadow-lg group-hover:scale-110 transition-transform">
-                    <ShoppingBag size={36} className="text-white" />
+                    <SprayCan size={36} className="text-white" />
                   </div>
                   <div>
                     <h3 className="font-bold text-xl text-slate-900 dark:text-white mb-2">Pharma Image</h3>
