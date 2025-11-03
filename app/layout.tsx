@@ -25,11 +25,20 @@ export const metadata: Metadata = {
     title: "Ahmed Mostafa | E-commerce Marketing Manager",
     description: "Professional portfolio showcasing e-commerce expertise and marketing leadership.",
     type: "website",
+    images: [
+      {
+        url: '/images/pfp.jpg',
+        width: 800,
+        height: 800,
+        alt: 'Ahmed Mostafa Profile Picture',
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Ahmed Mostafa | E-commerce Marketing Manager",
     description: "Professional portfolio showcasing e-commerce expertise and marketing leadership.",
+    images: ['/images/pfp.jpg'],
   },
 };
 
