@@ -9,13 +9,13 @@ export default function Home() {
 
   const galleryImages = [
     { src: "/images/1.webp", alt: "Moment 1" },
-    { src: "/images/Image.jpg", alt: "Special Moment" },
     { src: "/images/fb_img_1728407861209.webp", alt: "Professional Moment" },
-    { src: "/images/img_20220317_161253.webp", alt: "Event Moment" },
-    { src: "/images/img_20230411_100655.webp", alt: "Professional Setting" },
     { src: "/images/noon_event.webp", alt: "Noon Event" },
+    { src: "/images/Image.jpg", alt: "Special Moment" },
     { src: "/images/samiramies_event.webp", alt: "Samiramies Event" },
     { src: "/images/samiramies_event2.webp", alt: "Samiramies Event 2" },
+    { src: "/images/img_20220317_161253.webp", alt: "Event Moment" },
+    { src: "/images/img_20230411_100655.webp", alt: "Professional Setting" },
   ];
 
   return (
@@ -51,7 +51,7 @@ export default function Home() {
                 </h1>
                 <div className="inline-block mb-8">
                   <p className="text-xl md:text-2xl text-slate-700 dark:text-slate-300 font-medium px-6 py-3 bg-slate-100 dark:bg-slate-800 rounded-full">
-                    E-commerce Marketing Manager at <span className="font-bold text-blue-600 dark:text-blue-400">BEYMEN GROUP</span>
+                    E-commerce Manager at <span className="font-bold text-blue-600 dark:text-blue-400">BEYMEN GROUP</span>
                   </p>
                 </div>
 
@@ -133,7 +133,7 @@ export default function Home() {
                   </span>
                 </h2>
                 <p className="text-lg md:text-xl text-slate-700 dark:text-slate-300 leading-relaxed text-center">
-                  A successful marketing leader with proven accomplishments in driving growth and increasing profits. Articulate and driven leader with high energy and engaging personality. Hardworking team builder motivational in maximizing personnel performance and surpassing business objectives.
+                  Ecommerce Manager with a proven record in driving online sales, enhancing customer experience, and optimizing digital performance. Skilled in Shopify management, digital marketing, and data-driven growth strategies.
                 </p>
               </div>
             </div>
@@ -151,7 +151,7 @@ export default function Home() {
               </span>
             </h2>
             <p className="text-center text-slate-600 dark:text-slate-400 mb-12 text-lg">
-              E-commerce Websites I&rsquo;ve Created
+              Websites I&rsquo;ve Created
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
