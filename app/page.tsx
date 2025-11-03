@@ -9,7 +9,7 @@ export default function Home() {
 
   const galleryImages = [
     { src: "/images/1.webp", alt: "Moment 1" },
-    { src: "/images/coolef_event.webp", alt: "Coolef Event" },
+    { src: "/images/Image.jpg", alt: "Special Moment" },
     { src: "/images/fb_img_1728407861209.webp", alt: "Professional Moment" },
     { src: "/images/img_20220317_161253.webp", alt: "Event Moment" },
     { src: "/images/img_20230411_100655.webp", alt: "Professional Setting" },
@@ -165,103 +165,11 @@ export default function Home() {
                 <div className="absolute inset-0 bg-gradient-to-br from-slate-700/10 to-slate-900/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
                 <div className="relative z-10 flex flex-col items-center gap-4 text-center">
                   <div className="p-5 bg-gradient-to-br from-slate-700 to-slate-900 rounded-2xl shadow-lg group-hover:scale-110 transition-transform">
-                    <Shirt size={36} className="text-white" />
+                    <Shirt size={48} className="text-white" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-xl text-slate-900 dark:text-white mb-2">Beymen</h3>
-                    <p className="text-sm text-slate-600 dark:text-slate-400">Luxury Fashion & Lifestyle</p>
-                  </div>
-                  <div className="flex items-center gap-2 text-blue-600 dark:text-blue-400 text-sm font-medium">
-                    <span>Visit Website</span>
-                    <ExternalLink size={16} />
-                  </div>
-                </div>
-              </a>
-
-              {/* Cairo Medical */}
-              <a
-                href="https://cairomedical.com.eg/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group relative overflow-hidden bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 border border-slate-200 dark:border-slate-700"
-              >
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-cyan-500/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                <div className="relative z-10 flex flex-col items-center gap-4 text-center">
-                  <div className="p-5 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl shadow-lg group-hover:scale-110 transition-transform">
-                    <Stethoscope size={36} className="text-white" />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-xl text-slate-900 dark:text-white mb-2">Cairo Medical</h3>
-                    <p className="text-sm text-slate-600 dark:text-slate-400">Medical Products & Equipment</p>
-                  </div>
-                  <div className="flex items-center gap-2 text-blue-600 dark:text-blue-400 text-sm font-medium">
-                    <span>Visit Website</span>
-                    <ExternalLink size={16} />
-                  </div>
-                </div>
-              </a>
-
-              {/* Pharma Image */}
-              <a
-                href="https://pharmaimage.com.eg/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group relative overflow-hidden bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 border border-slate-200 dark:border-slate-700"
-              >
-                <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-pink-500/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                <div className="relative z-10 flex flex-col items-center gap-4 text-center">
-                  <div className="p-5 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl shadow-lg group-hover:scale-110 transition-transform">
-                    <SprayCan size={36} className="text-white" />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-xl text-slate-900 dark:text-white mb-2">Pharma Image</h3>
-                    <p className="text-sm text-slate-600 dark:text-slate-400">Skincare & Beauty Products</p>
-                  </div>
-                  <div className="flex items-center gap-2 text-blue-600 dark:text-blue-400 text-sm font-medium">
-                    <span>Visit Website</span>
-                    <ExternalLink size={16} />
-                  </div>
-                </div>
-              </a>
-
-              {/* Meats */}
-              <a
-                href="https://meats.com.sa/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group relative overflow-hidden bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 border border-slate-200 dark:border-slate-700"
-              >
-                <div className="absolute inset-0 bg-gradient-to-br from-red-500/10 to-orange-500/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                <div className="relative z-10 flex flex-col items-center gap-4 text-center">
-                  <div className="p-5 bg-gradient-to-br from-red-500 to-orange-500 rounded-2xl shadow-lg group-hover:scale-110 transition-transform">
-                    <Beef size={36} className="text-white" />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-xl text-slate-900 dark:text-white mb-2">Meat & More</h3>
-                    <p className="text-sm text-slate-600 dark:text-slate-400">Premium Meat Delivery</p>
-                  </div>
-                  <div className="flex items-center gap-2 text-blue-600 dark:text-blue-400 text-sm font-medium">
-                    <span>Visit Website</span>
-                    <ExternalLink size={16} />
-                  </div>
-                </div>
-              </a>
-
-              {/* oraimo */}
-              <a
-                href="https://eg.oraimo.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group relative overflow-hidden bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 border border-slate-200 dark:border-slate-700"
-              >
-                <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                <div className="relative z-10 flex flex-col items-center gap-4 text-center">
-                  <div className="p-5 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-2xl shadow-lg group-hover:scale-110 transition-transform">
-                    <Smartphone size={36} className="text-white" />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-xl text-slate-900 dark:text-white mb-2">oraimo</h3>
-                    <p className="text-sm text-slate-600 dark:text-slate-400">Smart Devices & Electronics</p>
+                    <h3 className="font-bold text-xl text-slate-900 dark:text-white mb-2">Beymen Egypt</h3>
+                    <p className="text-sm text-slate-600 dark:text-slate-400">Luxury Fashion</p>
                   </div>
                   <div className="flex items-center gap-2 text-blue-600 dark:text-blue-400 text-sm font-medium">
                     <span>Visit Website</span>
@@ -280,11 +188,103 @@ export default function Home() {
                 <div className="absolute inset-0 bg-gradient-to-br from-amber-500/10 to-orange-500/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
                 <div className="relative z-10 flex flex-col items-center gap-4 text-center">
                   <div className="p-5 bg-gradient-to-br from-amber-500 to-orange-500 rounded-2xl shadow-lg group-hover:scale-110 transition-transform">
-                    <CigaretteOff size={36} className="text-white" />
+                    <CigaretteOff size={48} className="text-white" />
                   </div>
                   <div>
                     <h3 className="font-bold text-xl text-slate-900 dark:text-white mb-2">Fix and Klint</h3>
-                    <p className="text-sm text-slate-600 dark:text-slate-400">Smokeless Nicotine Pouches</p>
+                    <p className="text-sm text-slate-600 dark:text-slate-400">White Nicotine Pouches</p>
+                  </div>
+                  <div className="flex items-center gap-2 text-blue-600 dark:text-blue-400 text-sm font-medium">
+                    <span>Visit Website</span>
+                    <ExternalLink size={16} />
+                  </div>
+                </div>
+              </a>
+
+              {/* Pharma Image */}
+              <a
+                href="https://pharmaimage.com.eg/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative overflow-hidden bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 border border-slate-200 dark:border-slate-700"
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-pink-500/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                <div className="relative z-10 flex flex-col items-center gap-4 text-center">
+                  <div className="p-5 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl shadow-lg group-hover:scale-110 transition-transform">
+                    <Image src="/images/skincare.png" alt="Skincare" width={48} height={48} />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-xl text-slate-900 dark:text-white mb-2">Pharma Image</h3>
+                    <p className="text-sm text-slate-600 dark:text-slate-400">Skincare & Cosmetics</p>
+                  </div>
+                  <div className="flex items-center gap-2 text-blue-600 dark:text-blue-400 text-sm font-medium">
+                    <span>Visit Website</span>
+                    <ExternalLink size={16} />
+                  </div>
+                </div>
+              </a>
+
+              {/* Cairo Medical */}
+              <a
+                href="https://cairomedical.com.eg/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative overflow-hidden bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 border border-slate-200 dark:border-slate-700"
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-cyan-500/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                <div className="relative z-10 flex flex-col items-center gap-4 text-center">
+                  <div className="p-5 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl shadow-lg group-hover:scale-110 transition-transform">
+                    <Stethoscope size={48} className="text-white" />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-xl text-slate-900 dark:text-white mb-2">Cairo Medical</h3>
+                    <p className="text-sm text-slate-600 dark:text-slate-400">Medical Devices</p>
+                  </div>
+                  <div className="flex items-center gap-2 text-blue-600 dark:text-blue-400 text-sm font-medium">
+                    <span>Visit Website</span>
+                    <ExternalLink size={16} />
+                  </div>
+                </div>
+              </a>
+
+              {/* Meats */}
+              <a
+                href="https://meats.com.sa/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative overflow-hidden bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 border border-slate-200 dark:border-slate-700"
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-red-500/10 to-orange-500/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                <div className="relative z-10 flex flex-col items-center gap-4 text-center">
+                  <div className="p-5 bg-gradient-to-br from-red-500 to-orange-500 rounded-2xl shadow-lg group-hover:scale-110 transition-transform">
+                    <Beef size={48} className="text-white" />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-xl text-slate-900 dark:text-white mb-2">Meat & More</h3>
+                    <p className="text-sm text-slate-600 dark:text-slate-400">Your Meat Destination</p>
+                  </div>
+                  <div className="flex items-center gap-2 text-blue-600 dark:text-blue-400 text-sm font-medium">
+                    <span>Visit Website</span>
+                    <ExternalLink size={16} />
+                  </div>
+                </div>
+              </a>
+
+              {/* oraimo */}
+              <a
+                href="https://eg.oraimo.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative overflow-hidden bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 border border-slate-200 dark:border-slate-700"
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                <div className="relative z-10 flex flex-col items-center gap-4 text-center">
+                  <div className="p-5 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-2xl shadow-lg group-hover:scale-110 transition-transform">
+                    <Smartphone size={48} className="text-white" />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-xl text-slate-900 dark:text-white mb-2">Oraimo</h3>
+                    <p className="text-sm text-slate-600 dark:text-slate-400">Smart Accessories</p>
                   </div>
                   <div className="flex items-center gap-2 text-blue-600 dark:text-blue-400 text-sm font-medium">
                     <span>Visit Website</span>
