@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ahmed Mostafa | E-commerce Marketing Manager",
-  description: "Professional portfolio of Ahmed Mostafa - E-commerce Marketing Manager at BEYMEN GROUP. Specializing in growth strategies, digital marketing, and e-commerce website development.",
+  title: "Ahmed Mostafa | E-commerce Manager",
+  description: "Professional portfolio of Ahmed Mostafa - E-commerce at BEYMEN GROUP. Specializing in growth strategies, digital marketing, and e-commerce website development.",
   icons: {
     icon: [
       { url: '/icon.svg', type: 'image/svg+xml' },
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     apple: '/icon.svg',
   },
   openGraph: {
-    title: "Ahmed Mostafa | E-commerce Marketing Manager",
+    title: "Ahmed Mostafa | E-commerce Manager",
     description: "Professional portfolio showcasing e-commerce expertise and marketing leadership.",
     type: "website",
     images: [
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ahmed Mostafa | E-commerce Marketing Manager",
+    title: "Ahmed Mostafa | E-commerce Manager",
     description: "Professional portfolio showcasing e-commerce expertise and marketing leadership.",
     images: ['/images/pfp.jpg'],
   },
