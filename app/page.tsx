@@ -36,7 +36,7 @@ export default function Home() {
                   <div className="absolute inset-0 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 rounded-full blur-lg opacity-75 animate-pulse"></div>
                   <div className="relative w-44 h-44 mx-auto rounded-full overflow-hidden border-4 border-white dark:border-slate-900 shadow-2xl">
                     <Image
-                      src="/images/pfp2.png"
+                      src="/images/pfp3.png"
                       alt="Profile Picture"
                       fill
                       className="object-cover object-[50%_10%]"

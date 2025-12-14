@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: '/images/pfp2.png',
+        url: '/images/pfp3.png',
         width: 800,
         height: 800,
         alt: 'Ahmed Mostafa Profile Picture',
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Ahmed Mostafa | E-commerce Manager",
     description: "Professional portfolio showcasing e-commerce expertise and marketing leadership.",
-    images: ['/images/pfp2.png'],
+    images: ['/images/pfp3.png'],
   },
 };
 
