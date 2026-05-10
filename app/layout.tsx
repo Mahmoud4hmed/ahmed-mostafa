@@ -30,9 +30,10 @@ export const metadata: Metadata = {
     siteName: "Ahmed Mostafa | E-commerce Manager",
     images: [
       {
-        url: '/images/pfp3.png',
+        url: 'https://ahmed-mostafa.dracode.org/images/pfp3.png',
         width: 800,
         height: 800,
+        type: 'image/png',
         alt: 'Ahmed Mostafa Profile Picture',
       },
     ],
@@ -41,7 +42,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Ahmed Mostafa | E-commerce Manager",
     description: "Professional portfolio showcasing e-commerce expertise and marketing leadership.",
-    images: ['/images/pfp3.png'],
+    images: ['https://ahmed-mostafa.dracode.org/images/pfp3.png'],
   },
 };
 
