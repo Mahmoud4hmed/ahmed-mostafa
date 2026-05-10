@@ -13,6 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://ahmed-mostafa.dracode.org"),
   title: "Ahmed Mostafa | E-commerce Manager",
   description: "Professional portfolio of Ahmed Mostafa - E-commerce at BEYMEN GROUP. Specializing in growth strategies, digital marketing, and e-commerce website development.",
   icons: {
@@ -25,6 +26,8 @@ export const metadata: Metadata = {
     title: "Ahmed Mostafa | E-commerce Manager",
     description: "Professional portfolio showcasing e-commerce expertise and marketing leadership.",
     type: "website",
+    url: "https://ahmed-mostafa.dracode.org",
+    siteName: "Ahmed Mostafa | E-commerce Manager",
     images: [
       {
         url: '/images/pfp3.png',

@@ -201,6 +201,29 @@ export default function Home() {
                 </div>
               </a>
 
+              {/* Nordix Global */}
+              <a
+                href="https://nordixglobal.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative overflow-hidden bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 border border-slate-200 dark:border-slate-700"
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-yellow-500/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                <div className="relative z-10 flex flex-col items-center gap-4 text-center">
+                  <div className="p-5 bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl shadow-lg group-hover:scale-110 transition-transform">
+                    <span className="text-5xl leading-none">🌐</span>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-xl text-slate-900 dark:text-white mb-2">Nordix Global</h3>
+                    <p className="text-sm text-slate-600 dark:text-slate-400">Scandinavian Luxury Lifestyle</p>
+                  </div>
+                  <div className="flex items-center gap-2 text-blue-600 dark:text-blue-400 text-sm font-medium">
+                    <span>Visit Website</span>
+                    <ExternalLink size={16} />
+                  </div>
+                </div>
+              </a>
+
               {/* Pharma Image */}
               <a
                 href="https://pharmaimage.com.eg/"
@@ -292,6 +315,7 @@ export default function Home() {
                   </div>
                 </div>
               </a>
+
 
               {/* Rashed Pharmacy */}
               {/* <a
