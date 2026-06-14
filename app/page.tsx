@@ -383,7 +383,7 @@ export default function Home() {
                 </div>
               </a>
               <a
-                href="https://instagram.com/ahmed.mostafa"
+                href="https://instagram.com/a7med.elhussieny/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative overflow-hidden bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 border border-slate-200 dark:border-slate-700"
